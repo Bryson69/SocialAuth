@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(9m)1s^o^+z8pj4w7r6*iu24sdwl4jj@4s!&jv7ju2^(^ucm)!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +107,23 @@ AUTH_PASSWORD_VALIDATORS = [
 AUTHENTICATION_BACKENDS = [
  'django.contrib.auth.backends.ModelBackend',
  'account.authentication.EmailAuthBackend',
+ 'social_core.backends.facebook.FacebookOAuth2',
+ 'social_core.backends.twitter.TwitterOAuth',
+ 'social_core.backends.google.GoogleOAuth2',
 ]
+
+# Facebook
+SOCIAL_AUTH_FACEBOOK_KEY = 'Facebook App ID' # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = 'Facebook App Secret' # Facebook App Secret
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+# Twitter
+SOCIAL_AUTH_TWITTER_KEY = 'Twitter API Key' # Twitter API Key
+SOCIAL_AUTH_TWITTER_SECRET = 'Twitter API Secret' # Twitter API Secret
+
+# Google
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'Google Consumer Key' # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Google Consumer Secret' # Google Consumer Secret
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
