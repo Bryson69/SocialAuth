@@ -5,7 +5,7 @@
     <br>
 </p>
 
-<h2 align="center">This app is powered by</h2>
+<h4 align="center">This app is powered by</h4>
 <p align="center">
     <br>
     <!--  -->
