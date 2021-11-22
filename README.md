@@ -44,7 +44,4 @@ $ python manage.py runserver
 
 * Simple logging setup ready for production envs.
 
-## Contributing
-
-I love contributions, so please feel free to fix bugs, improve things, provide documentation. Just send a pull request.
 
