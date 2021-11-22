@@ -5,7 +5,6 @@
     <br>
 </p>
 
-<h4 align="center">This app is powered by</h4>
 <p align="center">
     <br>
     <!--  -->
