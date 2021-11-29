@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h1>Welcome home your logged In...</h1>
+
+
+<div class="card" style="width: 400px; margin-left: 350px;">
+    <div class="card-body">
+ <h2>Welcome {{user.username}},  your now logged In </h2>
+ <p>Would you like to change you're Password?</p>
+ <small class="text-muted mt-5">
+     <a class="btn btn-secondary  btn-block" href="{% url 'password_change' %}">Change Password password?</a>
+     <a class="btn btn-light  btn-block" href="{% url 'edit' %}">Edit your profile</a>
+     <a class="btn btn-warning  btn-block" href="{% url 'logout' %}">Logout</a>
+    </small>
+    </div>
+</div>
 {% endblock %}

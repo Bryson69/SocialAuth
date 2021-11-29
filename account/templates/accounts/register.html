@@ -1,11 +1,27 @@
 {% extends "base.html" %}
-{% block title %}Create an account{% endblock %}
+{% load crispy_forms_tags %}
 {% block content %}
- <h1>Create an account</h1>
- <p>Please, sign up using the following form:</p>
- <form method="post">
- {{ user_form.as_p }}
- {% csrf_token %}
- <p><input type="submit" value="Create my account"></p>
- </form>
+
+    <div class="card" style="width: 400px; margin-left: 350px;">
+        <div class="card-body">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Create an Account</legend>
+                {{ user_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="btn btn-primary btn-block" href="{% url 'login' %}">Sign In</a>
+            </small>
+        </div>
+    </div>
+    </div>
+   
+    
 {% endblock %}
+
