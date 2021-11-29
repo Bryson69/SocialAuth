@@ -18,7 +18,7 @@
 
 #### The clean, fast and right way to start a new Django `3.9` powered website.
 ---
-<h3 align="left"> This is an Authentication App. It's built to allow users to Register and Login. Users can Sign-in Using their usernames as well as their emails. Social authentication features are also added into this application whereby users can Login using **Gmail**, **Facebook** and **Twitter**.</h3>
+<h3 align="left"> This is an Authentication App. It's built to allow users to Register and Login. Users can Sign-in using their usernames as well as their email. Social authentication features are also intergrated into this application whereby users can Login using __Gmail__, __Facebook__ and __Twitter__.</h3>
 ---
 
 ## Getting Started
