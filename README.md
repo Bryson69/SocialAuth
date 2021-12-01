@@ -1,4 +1,4 @@
-<h1 align="center">Django Blog App</h1>
+<h1 align="center">Django Social Authentication App</h1>
 <p align="center">
     <br>
      <img src="https://forthebadge.com/images/badges/made-with-python.svg" >
